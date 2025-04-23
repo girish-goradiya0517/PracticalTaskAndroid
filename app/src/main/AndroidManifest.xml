@@ -7,17 +7,17 @@
     <application
         android:name=".ProjectTaskApplication"
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_main"
         android:usesCleartextTraffic="true"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_main_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.splashScreenTheme">
+        android:theme="@style/Theme.HiltMVVMComposeMovie">
 
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.splashScreenTheme">
+            android:theme="@style/Theme.HiltMVVMComposeMovie">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

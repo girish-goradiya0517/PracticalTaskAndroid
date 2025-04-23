@@ -3,6 +3,7 @@ package com.practical.task.data.model
 import com.google.gson.annotations.SerializedName
 
 
+
 data class DiscoveryResponse(
     val success: Boolean,
     @SerializedName("api_log_id")
@@ -21,10 +22,11 @@ data class Page(
     val pillFilters: List<PillFilter>,
 )
 
+
 data class Element(
     val id: Long,
     @SerializedName("element_type")
-    val elementType: String,
+   val elementType: String,
     val header: String,
     val subheader: String,
     val sku: String?,
@@ -40,6 +42,7 @@ data class Element(
     val componentItems: List<ComponentItem>?,
     val style: String?,
 )
+
 
 data class MediaData(
     val authors: List<Author>,

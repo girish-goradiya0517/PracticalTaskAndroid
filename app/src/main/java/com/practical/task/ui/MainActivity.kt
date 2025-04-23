@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        installSplashScreen().apply {
+        /*installSplashScreen().apply {
             setKeepOnScreenCondition { splashViewModel.isLoading.value }
         }
-
+*/
         setContent {
             PracticalTaskAndroid {
                 App()
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 @Composable
-fun App(modifier: Modifier = Modifier) {
+fun App() {
     val navController = rememberNavController()
     Navigation(navController = navController)
 }

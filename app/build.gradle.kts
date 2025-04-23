@@ -4,11 +4,7 @@ plugins {
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.ksp)
-    alias(libs.plugins.room)
 }
-// for object Box currently not support the version catalog
-apply(plugin = "io.objectbox")
-
 android {
     compileSdk = 35
 
@@ -48,9 +44,6 @@ android {
         buildConfig = true
     }
 
-    room {
-        schemaDirectory("$projectDir/schemas")
-    }
 }
 
 dependencies {
@@ -101,12 +94,9 @@ dependencies {
     // Logger
     implementation(libs.timber)
 
-    // Room database
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
-    annotationProcessor(libs.room.compiler)
 
-    // objectBox Database
-    implementation(libs.objectbox.android)
+    // pull to refresh
+    implementation(libs.accompanist.swiperefresh)
+
+
 }

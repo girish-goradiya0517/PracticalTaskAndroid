@@ -12,3 +12,7 @@ val DefaultBackgroundColor = Color(0xFFFAFAFA)
 val Blue = Color(0xff76a9ff)
 val FloatingActionBackground = Color(0xffFBC02D)
 val LinkColor = Color(0xff64B5F6)
+
+val CardColor = Color(0xffF5F5F5)
+val ButtonBorder = Color(0xFFFC802B)
+val SeeAllBtnColor = Color(0XFF0F8079)
